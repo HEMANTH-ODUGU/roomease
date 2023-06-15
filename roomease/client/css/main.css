@@ -1,0 +1,340 @@
+/*------ COLORS ------*/
+
+	/* Background Colors */
+.bg-dark-purple {background: #1f253d;}
+.bg-main-purple {background: #394264;}
+.bg-purple-hover {background: #50597b;}
+.bg-teal {background: #11A8AB;}
+.bg-red {background: #e64c65;}
+
+	/* Text Colors */
+.white {color: #ffffff;}
+.dark-purple {color: #1f253d;}
+.main-purple {color: #394264;}
+.purple-hover {color: #50597b;}
+.purple-border {color: #50597b;}
+.red-hover {color: #cc324b;}
+.light-purple {color: #9099b7;}
+.teal {background: #11A8AB;}
+
+.border-teal {border-top-color: #11A8AB;}
+.bg-teal.button:hover {background: #0F9295;}
+.bg-dark-purple:hover {background: #50597b;}
+.bg-red.button:hover {background: #cc324b;}
+
+/*------ OVERALL STYLING ------*/
+body {
+	background: #1f253d;
+	font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+input {color: #333;}
+
+input[type=text] {
+  width: 260px;
+  height: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  background: #50597b;
+  color: #fff;
+  border: solid 1px #1f253d;
+  border-radius: 5px;
+}
+input[type=text]:focus {
+ 		outline: none;
+ 		border: 2px solid #11a8ab;
+ 	}
+label {font-weight: 300;}
+a:visited {color: white;}
+
+/*------ HELPERS ------*/
+
+.margin-right {margin-right: 10px;}
+.clear {clear: both;}
+.rounded {border-radius: 5px;}
+.light-border {border: 2px solid #50597b}
+.button {
+  display: inline-block;
+	padding: 0 20px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+}
+.button:hover {
+  text-decoration: none;
+  color: white;
+}
+
+/*------ Form Helpers ------*/
+.form-warning-text {
+	font-size: 1.35em;
+	font-weight: normal;
+	padding: 5px 0;
+	color: #e64c65;
+}
+.form-directions {
+	font-size: 14px;
+	font-weight: 300;
+	color: #9099b7;
+}
+.card-topper {
+  padding: 10px 0;
+  margin: 0px 0 40px 0;
+  border-radius: 5px 5px 0 0;
+}
+.card-topper-headline {
+  padding-top: 20px;
+  font-size: 1.75em;
+  text-transform: uppercase;
+}
+.task-input-card {
+  border-radius: 5px;
+	text-align: center;
+  padding-bottom: 40px;
+}
+.task-input-card,.living-space,.join-living-space label {
+  font-size: 18px;
+}
+.living-space-header {
+	margin-bottom: 30px;
+	color: #50597b;
+	font-size: 3.5em;
+}
+.ls-button {margin: 10px 0 0 10px;}
+
+/*------ Task Helpers ------*/
+/* This positions the X icon to be clicked to delete tasks */
+.closed {
+	position: relative;
+	float: right;
+	font-size: 2em;
+	top: 3px;
+	right: 10px;
+	color: #50597b;
+}
+.closed:hover {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+}
+/* This is positions the clickable check to mark a task complete */
+.task-check {
+	position: relative;
+	font-size: 2em;
+	float: left;
+	top: 20px;
+	left: 10px;
+	color: #50597b;
+}
+.completed {background: #11A8AB;}
+.freq {
+  padding-left: 5px;
+  padding-right: 15px;
+  margin: 5px 0 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.single-task-group {
+  list-style: none;
+  border: 2px solid #50597b;
+  padding-top: 10px;
+	padding-left: 50px;
+  padding-bottom: 10px;
+}
+.task-name {
+  font-size: 1.5em;
+  float: left;
+  display: inline;
+  margin: 0;
+}
+.task-description {font-weight: 300;}
+.task-frequency {
+  float: right;
+  margin: 0 20px 0 0;
+  background: #50597b;
+  padding: 8px 15px;
+  border-radius: 8px;
+  position: relative;
+  top: 15px;
+}
+/*------ HOMEPAGE STYLING ------*/
+.home-title {
+	font-family: 'Pacifico', cursive;
+	color: #394264;
+	font-size: 6em;
+}
+.home-intro {font-size: 2em;}
+
+.signin-bg {
+  background: url('../img/roomease-purple-bg.jpg') no-repeat center center;
+  height: 100vh;
+	width: 100%;
+  background-size: cover;
+}
+
+/*------ SIDE NAVBAR ------*/
+.sidebar-container {
+  position: fixed;
+  background: #394264;
+  text-align: center;
+  height: 100vh;
+	border-right: 3px solid #50597b;
+}
+.sidebar-nav {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.sidebar-nav li {margin: 80px 10px;}
+.sidebar-nav i {
+  font-size: 2.75em;
+  color: #9099b7;
+  /*color: #50597b;*/
+}
+.sidebar-nav i:hover {color: ghostwhite;}
+
+/*------ ROOMIE SEARCH PAGE ------*/
+.flex-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.page-wrapper {padding: 0 100px;}
+.roomie-search {
+  text-align: center;
+  padding-top: 20px;
+}
+.roomie-search input {
+  padding: 5px;
+  border-radius: 5px;
+  width: 300px;
+}
+.roomie-search-title {
+  font-size: 1.85em;
+  color: #9099b7;
+}
+.user-card {
+	min-width: 300px;
+	border-radius: 5px;
+	text-align: center;
+	height: 370px;
+	margin-top: 30px;
+	margin-left: 30px;
+  display: inline-block;
+	transition: all 1.5s ease;
+	border: 5px solid transparent;
+}
+
+.user-card:hover {border: 3px solid #9099b7;}
+.user-looking {
+	border-radius: 50%;
+	border: 5px solid #50597b;
+	margin-top: 30px;
+	transition: all .5s ease;
+}
+.user-name {
+	font-size: 1.3em;
+  margin-top: 20px;
+	margin-bottom: 5px;
+}
+.user-info {
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+.looking-icons {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.looking-icons li {
+	color: #9099b7;
+	font-size: 1.75em;
+	width: 100px;
+	line-height: 50px;
+	padding: 0px 0;
+	float: left;
+	border-right: 2px solid #50597b;
+}
+.looking-icons li:last-child {
+	border-right: 0px;
+	padding-right: 3px;
+}
+.looking-icons span {
+	font-size: .5em;
+	margin-left: .75em;
+	color: white;
+}
+
+/* ----- Font Awesome Icons ----- */
+.star {	border-top: 4px solid #11A8AB;}
+.location {	border-top: 4px solid #fcb150;}
+.fb {	border-top: 4px solid #e64c65;}
+
+/* ------ DASHBOARD ANGULAR BOOTSTRAP TAB STYLE -----*/
+.nav-tabs a:visited {color: white;}
+.nav-tabs a:link {color: white;}
+.nav-tabs > li > a:hover {background-color: #50597b;}
+.nav-tabs > li > a {border: 3px solid #50597b;}
+.nav-tabs.nav-justified > li > a {border: none;}
+
+.top-padding {padding-top: 50px;}
+.ls-padding {padding-top: 150px;}
+.user-image {
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  border: 5px solid #50597b;
+}
+.user-box {
+  margin-bottom: 12px;
+	padding: 10px 5px;
+  background-color: #394264;
+  border: 3px solid #50597b;
+  border-radius: 5px;
+}
+/*.active {background-color: teal;}*/
+
+.signin-form {margin-top: 200px;}
+.looking-user-box {float:left;}
+.search-user-image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+.container-fluid {padding: 0;}
+
+@media screen and (max-width: 760px) {
+	.mobile-padding {padding: 0 30px;}
+}
+
+/* Transitions */
+.grow {transition: all .2s ease-in-out;}
+.grow:hover {transform: scale(1.1);}
+
+.fade-in.ng-enter {animation: fadeIn 1s;}
+.fade-in.ng-leave {animation: fadeOut 1s;}
+
+/* Allen's Calendar Plugin Styling */
+.form-control {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+em.ng-binding {color: black;}
+small.ng-binding {color: black;}
+
+#delegator{
+  text-align: center;
+  margin: 0 auto;
+}
+.delegate-group {text-align: center;}
